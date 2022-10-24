@@ -1,5 +1,6 @@
 package de.haizon.zero;
 
+import de.haizon.zero.database.DatabaseHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -10,9 +11,23 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class ZeroPermissions extends JavaPlugin {
 
+    private static ZeroPermissions instance;
+
+    private DatabaseHandler databaseHandler;
+
     @Override
     public void onEnable() {
+        instance = this;
+
+        databaseHandler = new DatabaseHandler();
 
     }
 
+    public DatabaseHandler getDatabaseHandler() {
+        return databaseHandler;
+    }
+
+    public static ZeroPermissions getInstance() {
+        return instance;
+    }
 }

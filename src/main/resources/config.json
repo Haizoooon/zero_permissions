@@ -1,0 +1,13 @@
+{
+  "prefix": "§8» §e§lZero §8► §7",
+  "sql": {
+    "host": "localhost",
+    "port": "3306",
+    "database": "zero_permissions",
+    "username": "root",
+    "password": "123abc"
+  },
+  "messages": {
+    "noPermission": "You don't have any permission to use that command!"
+  }
+}

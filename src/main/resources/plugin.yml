@@ -1,0 +1,6 @@
+name: ZeroPermissions
+version: 1.0.0
+author: Haizoooon
+main: de.haizon.zero.ZeroPermissions
+api-version: 1.19
+description: This is a simple to use permission plugin
